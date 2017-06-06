@@ -10,7 +10,10 @@ public class Player extends GameObject {
 	}
 	
 	protected void movement(int steps) {
-		
+		currentField = board.movePlayer(this, steps);
+		if(currentField.chance != null) {
+			movement(currentField.chance.activatedAction());
+		}
 	}
 
 }
