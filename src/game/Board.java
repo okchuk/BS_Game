@@ -10,12 +10,15 @@ public class Board {
 	int fieldCount = 32;
 	Field[] fields;
 	
+	// TODO: List/Array of Chances
+	
 	/**
 	 * Standard constructor, assigns fields
 	 */
 	private Board() {
-		// TODO Auto-generated constructor stub
 		 fields = new Field[fieldCount];
+		 // TODO: Assignment of Chance fields
+		 // i.e. fields[3].chance = new ForwardChance(4, this, 5);
 	}
 	
 	/*private Board(int in_fieldCount) {
@@ -43,5 +46,10 @@ public class Board {
 		// TODO: Randomization here
 		return result;
 	}
-
+	
+	public Field movePlayer(Player in_player, int in_amount) {
+		Field newField = null;
+		// TODO: Move logic on Board
+		return newField;
+	}
 }
